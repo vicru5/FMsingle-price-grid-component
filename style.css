@@ -152,7 +152,7 @@ main{
 @media(max-width: 375px){
 	.container{
 		grid-template-columns: 1fr;
-		grid-template-rows: 219px 1fr 1fr;
+		grid-template-rows: 219px 187px 1fr;
 		width: 83%;
 		height: 600px;		
 		overflow: hidden;
@@ -160,7 +160,7 @@ main{
 
 	.container .text, .container .price, .container .why{
 		grid-column: 1/1;
-		padding: 20px;
+		padding: 21px;
 	}
 
 	.container .text h1{
@@ -179,4 +179,45 @@ main{
 		line-height: 21px;
 		margin-top: 13px;
 	}
+
+	.container .price h3{
+		font-size: 14px;
+		margin-bottom: 14px;
+	}
+
+	.container .price p:nth-child(2){
+		font-size: 26px;
+	}
+
+	.container .price p span{
+		font-size: 11px;
+		margin-left: 4px;
+		letter-spacing: 1px;
+	}
+
+	.container .price p:nth-child(3){
+		font-size: 13px;
+		margin-top: 4px;
+	}
+
+	.price .btn{
+		width: 100%;
+		position: relative;
+		margin-top: 25px;
+		font-size: 14px;
+		padding: 11px;
+	}
+
+	.why h3{
+		font-size: 15px;
+	}
+
+	.why ul{
+		margin-top: 13px;
+	}
+
+	.why ul li{
+		font-size: 11px;
+		line-height: 17px;
+	}	
 }
