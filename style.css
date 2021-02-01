@@ -149,5 +149,34 @@ main{
 	line-height: 18px;
 }
 
+@media(max-width: 375px){
+	.container{
+		grid-template-columns: 1fr;
+		grid-template-rows: 219px 1fr 1fr;
+		width: 83%;
+		height: 600px;		
+		overflow: hidden;
+	}
 
+	.container .text, .container .price, .container .why{
+		grid-column: 1/1;
+		padding: 20px;
+	}
+
+	.container .text h1{
+		margin-top: 3px;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+
+	.container .text h2{
+		font-size: 12px;
+		line-height: 17px;
+	}
+
+	.container .text p{
+		font-size: 11px;
+		line-height: 21px;
+		margin-top: 13px;
+	}
 }
