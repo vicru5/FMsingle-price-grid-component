@@ -1,0 +1,153 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+@font-face{
+	font-family: 'karla light';
+	src:url(fonts/Karla-VariableFont_wght.ttf);
+	font-weight: 400;
+}
+
+@font-face{
+	font-family: 'Karla bold';
+	src:url(fonts/Karla-VariableFont_wght.ttf);
+	font-weight: 700;
+}
+
+:root{
+/*Primary*/
+--Cyan: hsl(179, 62%, 43%);
+--BrightYellow: hsl(71, 73%, 54%);
+/*Neutral*/
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+}
+
+
+main{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background-color: var(--LightGray);
+}
+
+.container{
+	overflow: hidden;
+	width: 570px;
+	height: 430px;
+	border-radius: 5px;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 195px 1fr;
+	box-shadow: 0px 5px 15px #ccc;
+}
+
+.container .text, .container .price, .container .why{
+	padding: 37px;
+}
+
+.container .text{
+	grid-column: 1/3;
+}
+
+.text h1{
+	font-family: 'Karla bold';
+	color: var(--Cyan);
+	font-size: 21px;
+	margin-bottom: 22px;
+}
+
+.text h2{
+	font-family: 'Karla bold';
+	color: var(--BrightYellow);	
+}
+
+.text p{
+	font-size: 14px;
+	font-family: 'Karla light';
+	color: var(--GrayishBlue);
+	line-height: 23px;
+	margin-top: 11px;
+}
+
+.container .price{
+	grid-column: 1/2;
+	background-color: var(--Cyan);
+}
+
+.price h3{
+	font-family: 'Karla bold';
+	color: white;
+	font-size: 16px;
+	margin-bottom: 16px;
+}
+
+.container .price p:nth-child(2){
+	font-family: 'karla bold';
+	font-size: 28px;
+	color: white;
+	line-height: 30px;
+}
+
+.container .price p span{
+	position: relative;
+	top: -3px;
+	font-family: 'karla light';
+	color: var(--LightGray);
+	font-size: 13px;
+	margin-left: 2px;
+	letter-spacing: 1px;
+}
+
+.container .price p:nth-child(3){
+	font-family: 'karla light';
+	font-size: 14px;
+	color: white;
+	margin-top: 5px;
+}
+
+.price .btn{
+	width: 100%;
+	position: relative;
+	margin-top: 29px;
+	background-color: var(--BrightYellow);
+	color: white;
+	font-family: 'Karla bold';
+	font-size: 14px;
+	padding: 13px;
+	border-radius: 5px;
+	text-align-last: center;
+	box-shadow: 0px 5px 10px rgba(107,107,107,0.4);
+}
+
+.container .why{
+	grid-column: 2/3;
+	background-color: #4ABEBD;
+}
+
+.why h3{
+	color: white;
+	font-family: 'Karla bold';
+}
+
+.why ul{
+	font-family: 'Karla light';
+	color: var(--LightGray);
+	list-style: none;
+	margin-top: 15px;
+}
+
+.why ul li{
+	font-size: 12px;
+	line-height: 18px;
+}
+
+
+}
